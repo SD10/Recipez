@@ -132,6 +132,9 @@
                                 <state key="normal" title="ADD IMAGE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addImage:" destination="6LI-4y-3h7" eventType="touchUpInside" id="EYS-61-LWL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGe-Ph-Z6H">
                                 <rect key="frame" x="252" y="476" width="97" height="30"/>
@@ -140,6 +143,9 @@
                                     <constraint firstAttribute="width" constant="97" id="hqF-wM-G1K"/>
                                 </constraints>
                                 <state key="normal" title="Create Recipe"/>
+                                <connections>
+                                    <action selector="createRecipe:" destination="6LI-4y-3h7" eventType="touchUpInside" id="6Hj-g6-JOQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -163,6 +169,12 @@
                             <constraint firstItem="FYT-gI-RBj" firstAttribute="top" secondItem="Dcs-jg-LJP" secondAttribute="bottom" constant="45" id="ztS-bp-gAj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="recipeImage" destination="FYT-gI-RBj" id="2y1-2P-5wM"/>
+                        <outlet property="recipeIngredients" destination="Dcs-jg-LJP" id="U06-ky-bGt"/>
+                        <outlet property="recipeSteps" destination="9ck-fY-pUR" id="Y9F-6d-VZB"/>
+                        <outlet property="recipeTitle" destination="vLD-l7-H72" id="unv-Ra-kVz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="scR-xQ-RRN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
