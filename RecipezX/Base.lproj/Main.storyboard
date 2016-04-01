@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="1117" y="429"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Recipe View Controller-->
         <scene sceneID="W2A-fA-IYv">
             <objects>
-                <viewController id="6LI-4y-3h7" sceneMemberID="viewController">
+                <viewController id="6LI-4y-3h7" customClass="CreateRecipeViewController" customModule="RecipezX" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wbu-Jz-zBY"/>
                         <viewControllerLayoutGuide type="bottom" id="fyi-Oo-jhR"/>
@@ -120,7 +120,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FYT-gI-RBj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="FYT-gI-RBj">
                                 <rect key="frame" x="213" y="261" width="175" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="175" id="RPj-Fp-yAc"/>
@@ -188,4 +188,7 @@
             <point key="canvasLocation" x="345" y="429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="food" width="282" height="179"/>
+    </resources>
 </document>
