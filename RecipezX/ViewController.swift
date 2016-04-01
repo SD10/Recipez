@@ -34,9 +34,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        if let cell = tableView.dequeueReusableCellWithIdentifier("RecipeCell") as? RecipeCell {
+            let recipe = recipes[indexPath.row]
+            cell.configureCell(recipe)
+            return cell
+        } else {
+            return RecipeCell()
+        }
     }
-
-
 }
 
