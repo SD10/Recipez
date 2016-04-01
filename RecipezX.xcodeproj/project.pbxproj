@@ -15,6 +15,7 @@
 		B00A7CE71CAF296500F7CB32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00A7CE51CAF296500F7CB32 /* LaunchScreen.storyboard */; };
 		B00A7CF31CAF2F0F00F7CB32 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00A7CF11CAF2F0F00F7CB32 /* Recipe+CoreDataProperties.swift */; };
 		B00A7CF41CAF2F0F00F7CB32 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00A7CF21CAF2F0F00F7CB32 /* Recipe.swift */; };
+		B00A7CF61CAF30C500F7CB32 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00A7CF51CAF30C500F7CB32 /* RecipeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B00A7CE81CAF296500F7CB32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B00A7CF11CAF2F0F00F7CB32 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "../Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B00A7CF21CAF2F0F00F7CB32 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
+		B00A7CF51CAF30C500F7CB32 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				B00A7CDD1CAF296400F7CB32 /* Main.storyboard */,
 				B00A7CE51CAF296500F7CB32 /* LaunchScreen.storyboard */,
+				B00A7CF51CAF30C500F7CB32 /* RecipeCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				B00A7CE21CAF296500F7CB32 /* RecipezX.xcdatamodeld in Sources */,
 				B00A7CF31CAF2F0F00F7CB32 /* Recipe+CoreDataProperties.swift in Sources */,
 				B00A7CDC1CAF296400F7CB32 /* ViewController.swift in Sources */,
+				B00A7CF61CAF30C500F7CB32 /* RecipeCell.swift in Sources */,
 				B00A7CDA1CAF296400F7CB32 /* AppDelegate.swift in Sources */,
 				B00A7CF41CAF2F0F00F7CB32 /* Recipe.swift in Sources */,
 			);
