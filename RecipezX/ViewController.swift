@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -18,6 +19,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.delegate = self
         tableView.dataSource = self
 
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.reloadData()
+    }
+    
+    func fetchAndSetResults() {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context = appDelegate.managedObjectContext
+        let fetchRequest = NSFetchRequest(entityName: "Recipe")
+        
+        do {
+            let results = try context.executeFetchRequest(fetchRequest)
+            self.recipes = results as! [Recipe]
+        } catch let error as NSError {
+            print(error.debugDescription)
+        }
     }
 
     override func didReceiveMemoryWarning() {
